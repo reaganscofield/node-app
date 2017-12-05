@@ -91,7 +91,7 @@ app.get("/index/:id/edit", function(request, response){
     });
 });
 
-//Router with an ID Update Router
+//Router with an ID Update ROUTER
 app.put("/index/:id", function(request, response){
     Blog.findByIdAndUpdate(request.params.id, request.body.blog, function(err, updateBlog){
         if(err){
